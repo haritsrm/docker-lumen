@@ -4,7 +4,7 @@ MAINTAINER haritsrahman <haritzrahman98@gmail.com>
 
 RUN apt-get update -y
 
-RUN apt-get install -y php7.1-mbstring php7.1-xml php7.1-mcrypt php7.1-json libapache2-mod git curl
+RUN apt-get install -y php7.1-mbstring php7.1-xml php7.1-mcrypt php7.1-json
 
 RUN apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
 
