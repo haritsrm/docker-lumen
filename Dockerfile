@@ -8,7 +8,7 @@ RUN apt-get install -y php7.1-mbstring php7.1-xml php7.1-mcrypt php7.1-json
 
 RUN apt-get -y autoremove && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-RUN /usr/bin/a2enmod rewrite
+RUN /usr/sbin/a2enmod rewrite
 
 ADD 000-lumen.conf /etc/apache2/sites-available/
 
